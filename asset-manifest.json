@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/nickbalan/meet_app.git/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/nickbalan/meet_app.git/static/js/main.1bb23be1.chunk.js",
-    "main.js.map": "/nickbalan/meet_app.git/static/js/main.1bb23be1.chunk.js.map",
-    "runtime-main.js": "/nickbalan/meet_app.git/static/js/runtime-main.0c50a0bf.js",
-    "runtime-main.js.map": "/nickbalan/meet_app.git/static/js/runtime-main.0c50a0bf.js.map",
-    "static/js/2.9df8e2a7.chunk.js": "/nickbalan/meet_app.git/static/js/2.9df8e2a7.chunk.js",
-    "static/js/2.9df8e2a7.chunk.js.map": "/nickbalan/meet_app.git/static/js/2.9df8e2a7.chunk.js.map",
-    "static/js/3.ee38389b.chunk.js": "/nickbalan/meet_app.git/static/js/3.ee38389b.chunk.js",
-    "static/js/3.ee38389b.chunk.js.map": "/nickbalan/meet_app.git/static/js/3.ee38389b.chunk.js.map",
-    "index.html": "/nickbalan/meet_app.git/index.html",
-    "service-worker.js": "/nickbalan/meet_app.git/service-worker.js",
-    "service-worker.js.map": "/nickbalan/meet_app.git/service-worker.js.map",
-    "static/css/main.8c8b27cf.chunk.css.map": "/nickbalan/meet_app.git/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.9df8e2a7.chunk.js.LICENSE.txt": "/nickbalan/meet_app.git/static/js/2.9df8e2a7.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/nickbalan/meet_app.git/static/media/logo.103b5fa1.svg"
+    "main.css": "/nickbalan/meet-app.git/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/nickbalan/meet-app.git/static/js/main.7945e8ba.chunk.js",
+    "main.js.map": "/nickbalan/meet-app.git/static/js/main.7945e8ba.chunk.js.map",
+    "runtime-main.js": "/nickbalan/meet-app.git/static/js/runtime-main.ae762da6.js",
+    "runtime-main.js.map": "/nickbalan/meet-app.git/static/js/runtime-main.ae762da6.js.map",
+    "static/js/2.9df8e2a7.chunk.js": "/nickbalan/meet-app.git/static/js/2.9df8e2a7.chunk.js",
+    "static/js/2.9df8e2a7.chunk.js.map": "/nickbalan/meet-app.git/static/js/2.9df8e2a7.chunk.js.map",
+    "static/js/3.ee38389b.chunk.js": "/nickbalan/meet-app.git/static/js/3.ee38389b.chunk.js",
+    "static/js/3.ee38389b.chunk.js.map": "/nickbalan/meet-app.git/static/js/3.ee38389b.chunk.js.map",
+    "index.html": "/nickbalan/meet-app.git/index.html",
+    "service-worker.js": "/nickbalan/meet-app.git/service-worker.js",
+    "service-worker.js.map": "/nickbalan/meet-app.git/service-worker.js.map",
+    "static/css/main.8c8b27cf.chunk.css.map": "/nickbalan/meet-app.git/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.9df8e2a7.chunk.js.LICENSE.txt": "/nickbalan/meet-app.git/static/js/2.9df8e2a7.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/nickbalan/meet-app.git/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c50a0bf.js",
+    "static/js/runtime-main.ae762da6.js",
     "static/js/2.9df8e2a7.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.1bb23be1.chunk.js"
+    "static/js/main.7945e8ba.chunk.js"
   ]
 }
