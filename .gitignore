@@ -6,6 +6,12 @@
 .pnp.js
 node_modules
 
+# serverless directories
+.serverless
+
+# environment variables
+config.json
+
 # testing
 /coverage
 
