@@ -16,11 +16,11 @@ describe('<CitySearch /> component', () => {
         expect(CitySearchWrapper.find('.city')).toHaveLength(1);
     });
 
-    test('renders a list of suggestions', () => {
+    test('render a list of suggestions', () => {
         expect(CitySearchWrapper.find('.suggestions')).toHaveLength(1);
     });
 
-    test('renders text input correctly', () => {
+    test('render text input correctly', () => {
         const query = CitySearchWrapper.state('query');
         expect(CitySearchWrapper.find('.city').prop('value')).toBe(query);
     });
@@ -54,6 +54,14 @@ describe('<CitySearch /> component', () => {
           return location.toUpperCase().indexOf(query.toUpperCase()) > -1;
         });
         expect(CitySearchWrapper.state("suggestions")).toEqual(filteredLocations);
-      });
+    });
+
+    test('selecting a suggestion should change query state', () => {
+        CitySearchWrapper.setState({
+          query: 'Berlin'  });
+        const suggestions = CitySearchWrapper.state('suggestions');
+        CitySearchWrapper.find('.suggestions li').at(0).simulate('click');
+        expect(CitySearchWrapper.state("query")).toBe(suggestions[0]);
+    });
 
 });
