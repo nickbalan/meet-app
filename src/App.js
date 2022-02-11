@@ -37,25 +37,24 @@ class App extends Component {
   updateEvents = (location) => {
     
     getEvents().then((events) => {
-      const locationEvents = (location === 'all') ?
-        events:      
-        events.filter((event) => event.location === location);
-        const eventLocations = locationEvents.slice(0, this.state.numberOfEvents);
+      const locationEvents = (location === 'all') 
+      ? events
+      : events.filter((event) => event.location === location);
       if (this.mounted) {
             this.setState({
-              events: eventLocations.slice(0, this.state.numberOfEvents),
-              currentLocation: location,
+              events: locationEvents.slice(0, this.state.numberOfEvents),
+              currentLocation: location
             });   
       }
     });
     
   }
 
-  updateNumberOfEvents = async (e) => {
+  updateNumberOfEvents = (e) => {
 
     const newNumberOfEvents = e.target.value ? parseInt(e.target.value) : 32; 
-    await this.setState({numberOfEvents: newNumberOfEvents});
-    this.updateEvents(this.currentLocation, this.state.numberOfEvents);
+    this.setState({numberOfEvents: newNumberOfEvents});
+    this.updateEvents(this.state.currentLocation);
 
   };
 
