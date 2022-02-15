@@ -9,11 +9,12 @@ import './nprogress.css';
 class App extends Component {
 
   state = {
+
     events: [],
     locations: [],
     numberOfEvents: 32,
     currentLocation: 'all'
-    
+
   }
 
   componentDidMount() {
@@ -52,9 +53,21 @@ class App extends Component {
 
   updateNumberOfEvents = (e) => {
 
-    const newNumberOfEvents = e.target.value ? parseInt(e.target.value) : 32; 
+    const newNumberOfEvents = e.target.value ? parseInt(e.target.value) : 32;
     this.setState({numberOfEvents: newNumberOfEvents});
     this.updateEvents(this.state.currentLocation);
+    /* if(newNumberOfEvents < 1 || newNumberOfEvents > 32){
+      await this.setState({ 
+        numberOfEvents: newNumberOfEvents,
+        infoText: 'The number of events must be between 1 and 32' 
+    });
+    } else {
+      await this.setState({
+        errorText:'',
+        numberOfEvents: newNumberOfEvents
+      });
+      this.updateEvents(this.state.currentLocation, this.state.numberOfEvents); 
+    } */
 
   };
 
@@ -62,9 +75,19 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
-        <EventList events={this.state.events} numberOfEvents={this.state.numberOfEvents} />
-        <NumberOfEvents numberOfEvents={this.state.numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
+        <CitySearch 
+          locations={this.state.locations} 
+          updateEvents={this.updateEvents} 
+        />
+        <EventList 
+          events={this.state.events} 
+          numberOfEvents={this.state.numberOfEvents} 
+        />
+        <NumberOfEvents 
+          numberOfEvents={this.state.numberOfEvents} 
+          updateNumberOfEvents={this.updateNumberOfEvents}
+          errorText ={this.state.errorText}
+        />
       </div>
     );
 
