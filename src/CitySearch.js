@@ -43,7 +43,6 @@ class CitySearch extends Component {
     }
 
     render() {
-        //const { query } = this. state;
 
         return (
             <div className='CitySearch'>

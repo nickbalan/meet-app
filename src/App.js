@@ -56,19 +56,7 @@ class App extends Component {
     const newNumberOfEvents = e.target.value ? parseInt(e.target.value) : 32;
     this.setState({numberOfEvents: newNumberOfEvents});
     this.updateEvents(this.state.currentLocation);
-    /* if(newNumberOfEvents < 1 || newNumberOfEvents < 32){
-      this.setState({ 
-        numberOfEvents: newNumberOfEvents,
-        errorText: 'The number of events must be between 1 and 32' 
-    });
-    } else {
-      this.setState({
-        errorText:'',
-        numberOfEvents: newNumberOfEvents
-      });
-      this.updateEvents(this.state.currentLocation, this.state.numberOfEvents);
-    } */
- 
+    
   };
 
   render() {

@@ -33,9 +33,6 @@ class NumberOfEvents extends Component {
                 <input
                     type="number"
                     className="event-number"
-                    /* min="1" max="100"
-                    value={this.props.numberOfEvents}
-                    onChange={(e) => this.props.updateNumberOfEvents(e)} */
                     value={this.state.numberOfEvents}
                     onChange={this.handleInputChanged}
                 />
