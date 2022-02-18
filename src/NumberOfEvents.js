@@ -12,7 +12,6 @@ class NumberOfEvents extends Component {
     };
 
     handleInputChanged = (event) => {
-        console.log('Hi', event)
         this.setState({
           numberOfEvents: event.target.value,
           infoText: '',
