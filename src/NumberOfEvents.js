@@ -17,9 +17,9 @@ class NumberOfEvents extends Component {
           infoText: '',
         });
         if (event.target.value > 0 && event.target.value < 33) {
-          this.props.updateNumberOfEvents(event);
+          this.props.updateNumberOfEvents(event.target.value);
         } else {
-          this.setState({ infoText: "The events number must be between 1 and 32!" });
+          this.setState({ infoText: "The events number must be between 1 and 32" });
         }
         
     };
@@ -29,6 +29,7 @@ class NumberOfEvents extends Component {
         return (
             <div className="NumberOfEvents">
                 <ErrorAlert text={this.state.infoText} />
+                <label className="event-lable">Number of Events</label>{" "}
                 <input
                     type="number"
                     className="event-number"

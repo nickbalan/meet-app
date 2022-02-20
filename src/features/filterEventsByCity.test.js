@@ -4,11 +4,12 @@ import { mount, shallow} from 'enzyme';
 import App from '../App';
 import { mockData } from '../mock-data';
 import CitySearch from '../CitySearch';
-import { extractLocations, getEvents } from '../api';
+import { extractLocations } from '../api';
 
 const feature = loadFeature('./src/features/filterEventsByCity.feature');
+//const locations = extractLocations(mockData);
 
-defineFeature(feature, test => {
+defineFeature(feature, (test) => {
     
     test('When user hasn’t searched for a city, show upcoming events from all cities', ({ given, when, then }) => {
 
@@ -20,6 +21,7 @@ defineFeature(feature, test => {
         then('the user should see the list of upcoming events', () => {
             AppWrapper.update();
             expect(AppWrapper.find('.event')).toHaveLength(mockData.length);
+            console.log(AppWrapper.find('.event'));
         });
 
     });
@@ -48,7 +50,7 @@ defineFeature(feature, test => {
         });
         and('the list of suggested cities is showing', () => {
             AppWrapper.update();
-            expect(AppWrapper.find('.suggestions li')).toHaveLength(2);
+            expect(AppWrapper.find('.suggestions li')).toHaveLength(1);
         });
         when('the user selects a city (e.g., “Berlin, Germany”) from the list', () => {
             AppWrapper.find('.suggestions li').at(0).simulate('click');
