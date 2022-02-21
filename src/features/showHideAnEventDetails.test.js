@@ -15,7 +15,9 @@ defineFeature(feature, test => {
             AppWrapper = await mount(<App />);
             AppWrapper.update();
         });
-        when('an event is displayed', () => {});
+        when('the details button has been rendered', () => {
+            expect(AppWrapper.find(".buttonDetails")).toHaveLength(16);
+        });
         then('the element is collapsed by default', () => {
             expect(AppWrapper.find(".extra-details")).toHaveLength(0);
         });
@@ -29,6 +31,7 @@ defineFeature(feature, test => {
         });
         when('the user clicks on the Show details button of an individual event', () => {
             AppWrapper.update();
+            expect(AppWrapper.find('.buttonDetails')).toHaveLength(16);
             AppWrapper.find('.buttonDetails').at(0).simulate("click");
         });
         then('the event details will be displayed', () => {

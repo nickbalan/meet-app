@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
 class Event extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            collapsed: true,
-            buttonLabel: 'Show details'
-        };
-    }
+
+    state = {
+        collapsed: true,
+        buttonLabel: 'Show details'
+    };
 
     handleClick = () => {
 
@@ -34,11 +32,8 @@ class Event extends Component {
                         <p className='event-description'>{event.description}</p>
                     </div>
                 }
-                <button 
-                    className='buttonDetails details-btn' 
-                    onClick={() => this.handleClick()}
-                >
-                    {this.state.buttonLabel}{" "}
+                <button className='buttonDetails details-btn' onClick={this.handleClick}>
+                    {this.state.buttonLabel}
                 </button>
             </div>
 

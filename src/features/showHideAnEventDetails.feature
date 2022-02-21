@@ -2,7 +2,7 @@ Feature: Show/Hide event’s details
 
   Scenario: An event element is collapsed by default
     Given the user is on the main page of the app
-    When an event is displayed
+    When the details button has been rendered
     Then the element is collapsed by default
 
   Scenario: User clicks on the Show details button to see event details
