@@ -5,7 +5,7 @@ import './nprogress.css';
 import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
-import { InfoAlert } from './Alert';
+//import { InfoAlert } from './Alert';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
 import EventGenre from './EventGenre';
 
@@ -112,9 +112,9 @@ class App extends Component {
               updateNumberOfEvents={this.updateNumberOfEvents}
             />
           </Col>
-          {!navigator.onLine && (
+          {/* {!navigator.onLine && (
             <InfoAlert text='You are in Offline Mode' />
-          )}
+          )} */}
           <h4>Events by city</h4>
           <Col>
             <EventGenre events={this.state.events} />
