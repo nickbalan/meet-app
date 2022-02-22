@@ -10,8 +10,8 @@ function WelcomeScreen(props) {
           <div className="WelcomeScreen">
             <h1 className="header">Welcome to the Meet App</h1>
             <h4>
-              Log in to see upcoming events around the world for full-stack
-              developers
+              Log in to see upcoming events around the world on topic full-stack
+              development (Moka data)
             </h4>
             <div className="button_cont" align="center">
               <div className="google-btn">
