@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from "react-bootstrap";
 import './App.css';
+import './nprogress.css';
 import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import { InfoAlert } from './Alert';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
-import './nprogress.css';
+import EventGenre from './EventGenre';
+
 import WelcomeScreen from './WelcomeScreen';
-import { Container, Row, Col } from "react-bootstrap";
+
 import {
   ScatterChart,
   Scatter,
@@ -41,7 +44,7 @@ class App extends Component {
           this.setState({
             events: events.slice(0, this.state.numberOfEvents),
             locations: extractLocations(events)
-          });
+          }); 
         }
       });
     }
@@ -70,11 +73,6 @@ class App extends Component {
     const newNumberOfEvents = e.target.value ? parseInt(e.target.value) : 32;
     this.setState({ numberOfEvents: newNumberOfEvents });
     this.updateEvents(this.state.currentLocation);
-    /* const { currentLocation } = this.state;
-    this.setState({
-      numberOfEvents: eventCount,
-    });
-    this.updateEvents(currentLocation, eventCount); */
   };
 
   getData = () => {
@@ -104,14 +102,12 @@ class App extends Component {
             <h1>Meet App</h1>
             <h4>Choose your nearest city</h4>
             <CitySearch
-              //locations={locations
               locations={this.state.locations}
               updateEvents={this.updateEvents}
             />
           </Col>
           <Col>
             <NumberOfEvents
-              //numberOfEvents={numberOfEvents}
               numberOfEvents={this.state.numberOfEvents}
               updateNumberOfEvents={this.updateNumberOfEvents}
             />
@@ -121,6 +117,7 @@ class App extends Component {
           )}
           <h4>Events by city</h4>
           <Col>
+            <EventGenre events={this.state.events} />
             <ResponsiveContainer height={400}>
               <ScatterChart
                 margin={{
