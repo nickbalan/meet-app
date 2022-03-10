@@ -19,7 +19,7 @@ To build a serverless, progressive web application (PWA) with React using a test
 - Add an app shortcut to the home screen 
 - View a chart showing the number of upcoming events by city.
 
-## Technical Requirements: 
+## Initial Technical Requirements: 
 - The app must be a React application. 
 - The app must be built using the TDD technique. 
 - The app must use the Google Calendar API and OAuth2 authentication flow.
