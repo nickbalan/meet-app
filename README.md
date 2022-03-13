@@ -39,6 +39,6 @@ To build a serverless, progressive web application (PWA) with React using a test
 
 ## Meet App screenshots
 
-![Livescreen](src/img/Meet_App_livescreen_0.jpg)
-![Livescreen](src/img/Meet_App_livescreen_1.jpg)
-![Livescreen](src/img/Meet_App_livescreen_2.jpg)
+![Livescreen](src/img/Meet_App_livescreen_0.JPG)
+![Livescreen](src/img/Meet_App_livescreen_1.JPG)
+![Livescreen](src/img/Meet_App_livescreen_2.JPG)
