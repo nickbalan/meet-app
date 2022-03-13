@@ -36,3 +36,9 @@ To build a serverless, progressive web application (PWA) with React using a test
 - The app must make use of data visualization (recharts preferred). 
 - The app must be covered by tests with a coverage rate >= 90%. 
 - The app must be monitored using an online monitoring tool.
+
+## Meet App screenshots
+
+![Livescreen](src/img/Meet_App_livescreen_0)
+![Livescreen](src/img/Meet_App_livescreen_1)
+![Livescreen](src/img/Meet_App_livescreen_2)
