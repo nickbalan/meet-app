@@ -1,4 +1,4 @@
-# Meet App
+# Meet App. Technical Case Study
 
 ## Objective 
 To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
@@ -20,17 +20,9 @@ be used even when the user is offline. As it's responsive, it displays well on a
 - As a user, I should be able to specify the number of events I want to view in the app so that I can see more or fewer events in the events list at once
 - As a user, I should be able to use the app when offline so that I can see the events I viewed the last time I was online
 - As a user, I should be able to add the app shortcut to my home screen so that I can open the app faster
-- As a user, I should be able to see a chart showing the upcoming events in each city to know what events are organized in which city.  
+- As a user, I should be able to see a chart showing the upcoming events in each city to know what events are organized in which city.
 
-## Key Features
-- Filter events by city 
-- Show/hide event details 
-- Specify the number of events 
-- Use the app when offline 
-- Add an app shortcut to the home screen 
-- View a chart showing the number of upcoming events by city.
-
-## Technical Requirements
+## Technical Requirements & Solutions
 - The app must be a React application
 - The app must be built using the TDD technique
 - The app must use the Google Calendar API and OAuth2 authentication flow
@@ -47,6 +39,14 @@ The app must work on the latest versions of Chrome, Firefox, Safari, Edge, Opera
 - The app must make use of data visualization (recharts preferred)
 - Tests must cover the app with a coverage rate >= 90%
 - The app must be monitored using an online monitoring tool.
+
+## Key Features
+- Filter events by city 
+- Show/hide event details 
+- Specify the number of events 
+- Use the app when offline 
+- Add an app shortcut to the home screen 
+- View a chart showing the number of upcoming events by city.
 
 ## Meet App screenshots
 
