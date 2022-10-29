@@ -11,13 +11,9 @@ Serverless and PWAs have grown in popularity over the last few years, and both a
 - Serverless: No backend maintenance, easy to scale, always available, no cost for idle time
 - PWAs: Instant loading, offline support, push notifications, "add to home screen" prompt, responsive design, and cross-platform compatibility.
 
-## Project Deliverables Acknowledgement
+## Project Owner, Management, and Acknowledgement
 
-- CareerFoundry (25.02.2021 - 17.03.2022)
-
-## Project Improvement Strategies
-
-- Nick Balan (18.03.2022 - Current)
+[CareerFoundry](https://careerfoundry.com/) (25.02.2021 - 17.03.2022)
 
 ## My Role
 
