@@ -1,30 +1,44 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Standardized .gitignore file that developers must use to avoid committing and pushing logs files, VSCode files, etc.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-node_modules
-
-# serverless directories
-.serverless
-
-# environment variables
-config.json
-
-# testing
-/coverage
+# A .gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected; see the link ->  https://git-scm.com/docs/gitignore for more information about gitignore file.
 
 # production
 /build
+build.json
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# compiled output
+/dist
+/node_modules
+node_modules
+.cache
 
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
